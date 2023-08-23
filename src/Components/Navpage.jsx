@@ -1,7 +1,7 @@
 import styles from "./Navpage.module.css";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
-import Ulist from "../pages/Ulist";
+import Ulist from "./Ulist";
 const Navpage = () => {
   const [innerwidth, setinnerwidth] = useState(window.innerWidth);
   const [toggled, settoggled] = useState(false);

@@ -7,16 +7,19 @@
   color: rgba(255, 255, 255, 0.87);
   --color-brand--2: rgb(1, 168, 1);
   --color-dark-1: #2d3439;
+  --color-dark-2: #474e53;
   --color-light-1: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -27,11 +30,9 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 15px;
+  box-sizing: border-box;
+  max-height: 100vh;
   background-color: white;
 }
 * {
