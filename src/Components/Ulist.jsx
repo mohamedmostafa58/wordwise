@@ -7,7 +7,7 @@ const Ulist = ({ className, loginclassname }) => {
         <Link to="/products">products</Link>
       </li>
       <li>
-        <Link to="pricing">pricing</Link>
+        <Link to="/pricing">pricing</Link>
       </li>
       <li>
         <Link to="/login" id={loginclassname}>
