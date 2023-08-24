@@ -16,7 +16,7 @@ const Navpage = () => {
   }, []);
   return (
     <>
-      {innerwidth > 592 ? (
+      {innerwidth > 662 ? (
         <div className={styles.navdiv}>
           <Logo />
           <Ulist className={styles.nav} loginclassname={styles.login} />

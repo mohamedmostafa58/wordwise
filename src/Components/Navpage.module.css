@@ -39,7 +39,7 @@
     padding: 7px;
   }
 }
-@media (max-width: 592px) {
+@media (max-width: 662px) {
   .nav {
     display: none;
   }

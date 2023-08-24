@@ -1,34 +1,112 @@
 .product {
-  margin: 2.5rem;
-  padding: 2.5rem 5rem;
-  background-color: var(--color-dark--1);
-  min-height: calc(100vh - 5rem);
+  background-color: var(--color-dark-1);
+  height: calc(100vh - 20px);
+  padding: 15px;
+  width: calc(100vw - 20px);
+  max-width: calc(100vw -20px);
+  box-sizing: border-box;
 }
 
 .product section {
-  width: clamp(80rem, 80%, 90rem);
-  margin: 6rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 7rem;
+  width: 70%;
+  padding-top: 10vh;
+  display: flex;
+  gap: 40px;
   align-items: center;
+  margin-inline: auto;
+  justify-content: center;
+  text-align: start;
 }
-
-.product img {
-  width: 100%;
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.product section img {
+  width: 20vw;
 }
 
 .product h2 {
-  font-size: 4rem;
+  width: 100%;
+  font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  text-align: start;
 }
 
 .product p {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .product section a {
   margin-top: 2rem;
+}
+@media (max-width: 1440px) {
+  .product section {
+    width: 80%;
+  }
+  .product section img {
+    width: 27vw;
+  }
+  .product h2 {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .product p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .product section {
+    width: 90%;
+  }
+  .product section img {
+    width: 35vw;
+  }
+  .product h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .product p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .product section {
+    width: 90%;
+  }
+  .product section img {
+    width: 45vw;
+  }
+  .product h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .product p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 662px) {
+  .product {
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 10px;
+    width: calc(100vw - 20px);
+  }
+  .product section {
+    width: 90%;
+    flex-direction: column;
+  }
+  .product section img {
+    width: 50vw;
+  }
+  .product h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .product p {
+    font-size: 1rem;
+  }
 }
