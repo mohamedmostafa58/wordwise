@@ -1,0 +1,116 @@
+.pricing {
+  background-color: var(--color-dark-1);
+  height: calc(100vh - 20px);
+  padding: 15px;
+  width: calc(100vw - 20px);
+  max-width: calc(100vw -20px);
+  box-sizing: border-box;
+}
+
+.pricing section {
+  width: 70%;
+  padding-top: 10vh;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-inline: auto;
+  justify-content: center;
+  text-align: start;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.pricing section img {
+  width: 30vw;
+}
+
+.pricing h2 {
+  width: 100%;
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: start;
+}
+
+.pricing p {
+  font-size: 1.2rem;
+}
+
+.pricing section a {
+  margin-top: 2rem;
+}
+@media (max-width: 1440px) {
+  .pricing section {
+    width: 80%;
+  }
+  .pricing section img {
+    width: 27vw;
+  }
+  .pricing h2 {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+  .pricing p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 992px) {
+  .pricing section {
+    width: 90%;
+  }
+  .pricing section img {
+    width: 35vw;
+  }
+  .pricing h2 {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  .pricing p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 792px) {
+  .pricing section {
+    width: 90%;
+  }
+  .pricing section img {
+    width: 45vw;
+  }
+  .pricing h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  .pricing p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 662px) {
+  .pricing {
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 10px;
+    width: calc(100vw - 20px);
+  }
+  .pricing section {
+    width: 90%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .pricing section img {
+    width: 50vw;
+  }
+  .pricing h2 {
+    font-size: 1.8rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pricing p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
