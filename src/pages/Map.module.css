@@ -1,0 +1,17 @@
+.map {
+  height: var(100vh - 20px);
+  width: 50%;
+  background-color: var(--color-dark-2);
+}
+@media (max-width: 1092px) {
+  .map {
+    width: 35%;
+  }
+}
+@media (max-width: 792px) {
+  .map {
+    width: 100%;
+    height: calc(40vh - 10px);
+    padding-bottom: 20px;
+  }
+}

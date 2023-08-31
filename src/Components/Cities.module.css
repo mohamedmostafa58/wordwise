@@ -1,0 +1,12 @@
+.cities {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 80%;
+  list-style: none;
+}
+@media (max-width: 792px) {
+  .cities {
+    width: 95%;
+  }
+}

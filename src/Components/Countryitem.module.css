@@ -1,0 +1,11 @@
+.countryitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--color-dark-2);
+  border-radius: 8px;
+  border-left: 3px solid orange;
+  padding: 15px;
+}

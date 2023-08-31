@@ -1,0 +1,12 @@
+.applayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100vw - 20px);
+}
+@media (max-width: 792px) {
+  .applayout {
+    flex-direction: column;
+    width: calc(100vw - 20px);
+  }
+}

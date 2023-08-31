@@ -1,0 +1,28 @@
+.cityform {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: white;
+  gap: 10px;
+  background-color: var(--color-dark-2);
+  border-radius: 5px;
+}
+.cityform input {
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-size: 16px;
+}
+.cityform .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 792px) {
+  .cityform {
+    width: 95%;
+  }
+}

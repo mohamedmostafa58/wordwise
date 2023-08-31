@@ -1,0 +1,12 @@
+.countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+  list-style: none;
+}
+@media (max-width: 892px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
