@@ -13,7 +13,7 @@ const Sidebar = () => {
         setselectedcityid("");
       }}
     >
-      <Logo />
+      <Logo className={styles.logo} />
       <div className={styles.citycountry}>
         <Link to="cities">
           <p
