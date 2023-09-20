@@ -1,0 +1,54 @@
+.city {
+  background-color: var(--color-dark-2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+  width: 60%;
+  padding: 20px;
+  border-radius: 7px;
+  text-transform: uppercase;
+}
+.city p {
+  color: rgb(204, 203, 203);
+}
+.cityname h2 {
+  font-size: 18px;
+}
+.cityname h2 span {
+  margin-right: 5px;
+}
+.city a,
+.city a:hover {
+  color: rgb(221, 190, 11);
+  font-size: 16px;
+}
+.linkbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .city {
+    width: 75%;
+  }
+}
+@media (max-width: 1192px) {
+  .city {
+    width: 85%;
+  }
+  .city a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 792px) {
+  .city {
+    width: 95%;
+  }
+  .city a {
+    font-size: 12px;
+  }
+}

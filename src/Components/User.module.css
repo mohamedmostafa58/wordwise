@@ -1,0 +1,27 @@
+.logeduser {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 255px;
+  height: 55px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background-color: black;
+  z-index: 10000;
+  border-radius: 7px;
+  color: white;
+}
+.logeduser img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.logeduser span {
+  display: inline-block;
+}
+.logeduser button {
+  background-color: var(--color-dark-1);
+}

@@ -11,3 +11,9 @@
     height: 2.5rem;
   }
 }
+@media (max-width: 792px) {
+  .link {
+    align-self: flex-start;
+    margin-top: 60px;
+  }
+}

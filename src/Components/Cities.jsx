@@ -1,22 +1,14 @@
-import { useState } from "react";
-import data from "../../data/cities.json";
+import { useContext } from "react";
 import styles from "./Cities.module.css";
 import Cityitem from "./Cityitem";
-if (localStorage.getItem("cities") === null) {
-  localStorage.setItem("cities", JSON.stringify(data.cities));
-}
+import { CityProvider } from "./Providers/CitiesProvider";
+
 const Cities = () => {
-  const citiesvisited = JSON.parse(localStorage.getItem("cities"));
-  const [cities, setcities] = useState([...citiesvisited]);
-  const deletecity = (id) => {
-    const newcities = cities.filter((city) => city.id !== id);
-    localStorage.setItem("cities", JSON.stringify(newcities));
-    setcities(newcities);
-  };
+  const { cities } = useContext(CityProvider);
   return (
     <ul className={styles.cities}>
       {cities.map((city) => (
-        <Cityitem key={city.id} city={city} deletecity={deletecity} />
+        <Cityitem key={city.id} city={city} />
       ))}
     </ul>
   );

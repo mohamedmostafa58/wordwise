@@ -10,6 +10,9 @@
   text-decoration: none;
   color: white;
 }
+.cityitem:hover {
+  color: white;
+}
 .cityitemcontent {
   display: flex;
   gap: 10px;
@@ -23,6 +26,7 @@
   background-color: black;
   padding: 5px 8px;
   border: none;
+  cursor: pointer;
 }
 @media (max-width: 892px) {
   .cityitem {

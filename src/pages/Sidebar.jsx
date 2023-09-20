@@ -1,11 +1,18 @@
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../Components/Logo";
 import styles from "./Sidebar.module.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CityProvider } from "../Components/Providers/CitiesProvider";
 const Sidebar = () => {
   const [selected, setselected] = useState("cities");
+  const { setselectedcityid } = useContext(CityProvider);
   return (
-    <div className={styles.sidebar}>
+    <div
+      className={styles.sidebar}
+      onClick={() => {
+        setselectedcityid("");
+      }}
+    >
       <Logo />
       <div className={styles.citycountry}>
         <Link to="cities">

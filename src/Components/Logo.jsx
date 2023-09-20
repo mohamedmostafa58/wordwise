@@ -3,7 +3,7 @@ import logo from "./../../public/logo.png";
 import { Link } from "react-router-dom";
 const Logo = () => {
   return (
-    <Link to="/">
+    <Link to="/" className={styles.link}>
       <img src={logo} className={styles.logo} alt="logo" />
     </Link>
   );
